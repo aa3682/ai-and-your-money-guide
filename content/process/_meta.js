@@ -1,3 +1,3 @@
 export default {
-  'example-step': 'Example step'
+  'decide-what-to-use-it-for': 'Decide what to use it for'
 }
