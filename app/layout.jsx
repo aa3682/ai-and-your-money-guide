@@ -6,7 +6,7 @@ import NoLastUpdated from './no-last-updated'
 import 'nextra-theme-docs/style.css'
 import './globals.css'
 
-const REPO_URL = 'https://github.com/aa3682/guide-template'
+const REPO_URL = 'https://github.com/aa3682/ai-and-your-money-guide'
 
 // Outfit (variable, SIL OFL: fonts/OFL.txt) is committed in fonts/ and
 // self-hosted by next/font, so no build depends on a font service.
@@ -20,10 +20,10 @@ const outfit = localFont({
 
 export const metadata = {
   title: {
-    default: 'Guide Template',
-    template: '%s – Guide Template'
+    default: 'AI and Your Money Guide',
+    template: '%s – AI and Your Money Guide'
   },
-  description: 'Guide Template'
+  description: 'How to use AI on your own money without being misled, from deciding what to ask it to checking what it tells you before you act.'
 }
 
 export default async function RootLayout({ children }) {
@@ -38,8 +38,8 @@ export default async function RootLayout({ children }) {
       />
       <body>
         <Layout
-          navbar={<Navbar logo={<b>AlignFlow · Guide Template</b>} projectLink={REPO_URL} />}
-          footer={<Footer>{new Date().getFullYear()} © Guide Template</Footer>}
+          navbar={<Navbar logo={<b>AlignFlow · AI and Your Money Guide</b>} projectLink={REPO_URL} />}
+          footer={<Footer>{new Date().getFullYear()} © AI and Your Money Guide</Footer>}
           docsRepositoryBase={`${REPO_URL}/blob/main`}
           pageMap={pageMap}
           darkMode={false}
