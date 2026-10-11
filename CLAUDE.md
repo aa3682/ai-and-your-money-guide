@@ -123,3 +123,5 @@ Every term that any page links to /glossary. Add a term here when a new page lin
 - training cutoff (/glossary#training-cutoff) — first linked from process/understand-how-it-answers
 - anonymise (/glossary#anonymise) — first linked from process/choose-what-you-share
 - personal data (/glossary#personal-data) — first linked from process/choose-what-you-share
+- leading question (/glossary#leading-question) — first linked from process/ask-it-well
+- prompt (/glossary#prompt) — first linked from process/ask-it-well
