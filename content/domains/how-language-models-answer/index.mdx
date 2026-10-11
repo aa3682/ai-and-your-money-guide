@@ -1,0 +1,63 @@
+---
+title: How language models answer
+description: What the tool is doing when it replies, why it can state a wrong fact with confidence, and why it tends to agree with you.
+---
+
+import { Callout } from 'nextra/components'
+
+# How language models answer
+
+Every AI assistant you are likely to use on a money question is built on a [language model](/glossary#language-model), and every habit this guide asks of you follows from how that model produces a reply. This area explains the mechanism in plain words, with the evidence behind it, so that the tool's strengths and failures stop looking random and start looking predictable.
+
+## Key ideas
+
+### It predicts text, one piece at a time
+
+A language model is a very large pattern of word associations, built by processing an enormous amount of written text. When you ask a question, it does not look the answer up. It produces the reply piece by piece, each time choosing the next fragment that fits best with everything written so far, including your question. It reads like a considered answer because the patterns came from people writing considered answers.
+
+### It composes, it does not retrieve
+
+Because the reply is assembled rather than fetched, nothing in it is a copy of a record. A sentence that looks like a quotation from a tax form, a statute or a bank's terms is a reconstruction of what such a sentence usually looks like. It is often right and never evidence; the record has to be found separately, which is what [Primary sources](/domains/primary-sources) and the fifth step are for.
+
+### It fills gaps with the common case
+
+When your question reaches past what the patterns cover, the model does not stop. It continues with whatever would most often follow in similar text, which produces a [hallucination](/glossary#hallucination): a fluent sentence, a plausible figure, a citation in the right format, none of it tied to anything. In money matters the common case is often the wrong case for you: the general rule rather than your state's version, or this year's figure replaced by whatever was most written about.
+
+### Its knowledge stops at a date
+
+The text the model learned from was collected up to a [training cutoff](/glossary#training-cutoff). Anything that changed after that date is absent or present in its old form, and the reply does not say which. Some tools can search the web before answering; the search result still passes through the same composing process, so you still need to see the source yourself. Treat any current rule, rate or limit from the tool as dated until a primary source confirms it.
+
+### It leans toward your framing
+
+The model's best-fitting continuation of a question is one that accepts the question's premises. If you state something false as background, the reply usually builds on it rather than correcting it. If the wording signals the answer you hope for, the reply tends to supply it. Researchers call this sycophancy: the tendency to agree with the person asking. It is why the fourth step spends so long on how to ask, and why a [leading question](/glossary#leading-question) is the easiest way to get a confident, useless answer.
+
+### It cannot measure its own reliability
+
+The model has no internal gauge of how well grounded a given sentence is. A reconstruction from thousands of similar documents and a pure invention come out of the same process in the same tone. Asking the tool how sure it is yields another composed sentence, not a measurement; studies that tested models on their own errors found they could not reliably predict which answers were wrong. Confidence therefore has to come from your checking.
+
+## Where it shows up in the process
+
+- [Decide what to use it for](/process/decide-what-to-use-it-for): why the tool is a fine explainer, a lead on a current fact and no more than a sounding board on a decision.
+- [Understand how it answers](/process/understand-how-it-answers): the short version of this page, applied as you read a reply.
+- [Ask it well](/process/ask-it-well): why framing, stated assumptions and a request for sources change what comes back.
+- [Act, record and review](/process/act-record-and-review): why your review keeps finding the same kinds of error, and how to plan around them.
+
+## Common misconceptions
+
+- "It searched for that." Unless the tool shows you a live source, the reply was composed from patterns, not looked up.
+- "It sounded sure, so it is probably right." Tone is a property of the writing, not of the fact; the two are independent.
+- "It cited a document, so the document exists." Citations are generated the same way as every other sentence and are as likely to be invented.
+- "I asked it to double-check and it confirmed." A second reply is a second composition; it is not a check.
+- "It knows the current rules." It knows what was commonly written before its cutoff, which may be an old version or no version at all.
+
+## For practitioners
+
+<Callout type="info">
+A client who understands this area will bring you better questions and fewer confident errors, so it is worth explaining once in plain words: the tool composes rather than looks up, it fills gaps with the common case, it tends to agree with the asker, and its tone says nothing about accuracy. Do not try to talk them out of using it; help them become a careful user, and when they bring you a tool-generated figure or citation, trace it to a primary source together so they see the method. In their file, note which of their questions have been going to a tool and any figure or rule they relied on that turned out to be wrong, so a later decision can be traced to its origin.
+</Callout>
+
+## Go deeper
+
+- [Large Legal Fictions: Profiling Legal Hallucinations in Large Language Models](https://doi.org/10.1093/jla/laae003), Journal of Legal Analysis: peer-reviewed study showing how often models invent legal facts, accept false premises and fail to predict their own errors.
+- [Survey of Hallucination in Natural Language Generation](https://doi.org/10.1145/3571730), ACM Computing Surveys: peer-reviewed overview of why generated text drifts from fact and how the problem is measured.
+- [Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile](https://doi.org/10.6028/NIST.AI.600-1), National Institute of Standards and Technology: the standards body's catalogue of generative-model risks, including confabulation and over-reliance.

@@ -1,3 +1,3 @@
 export default {
-  'example-area': 'Example area'
+  'how-language-models-answer': 'How language models answer'
 }
