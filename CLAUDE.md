@@ -121,3 +121,5 @@ Every term that any page links to /glossary. Add a term here when a new page lin
 - hallucination (/glossary#hallucination) — first linked from process/understand-how-it-answers
 - language model (/glossary#language-model) — first linked from process/understand-how-it-answers
 - training cutoff (/glossary#training-cutoff) — first linked from process/understand-how-it-answers
+- anonymise (/glossary#anonymise) — first linked from process/choose-what-you-share
+- personal data (/glossary#personal-data) — first linked from process/choose-what-you-share
