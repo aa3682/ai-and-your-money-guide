@@ -127,3 +127,5 @@ Every term that any page links to /glossary. Add a term here when a new page lin
 - prompt (/glossary#prompt) — first linked from process/ask-it-well
 - assumption (/glossary#assumption) — first linked from process/check-what-it-tells-you
 - secondary source (/glossary#secondary-source) — first linked from process/check-what-it-tells-you
+- advice (/glossary#advice) — first linked from process/act-record-and-review
+- decision note (/glossary#decision-note) — first linked from process/act-record-and-review
