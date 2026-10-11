@@ -1,0 +1,69 @@
+---
+title: Understand how it answers
+description: What an AI assistant is actually doing when it replies to a money question, and why that explains where it helps and where it fails.
+---
+
+import { Callout } from 'nextra/components'
+
+# Understand how it answers
+
+This step is about the tool itself: what it is doing when it produces an answer, and what that means for how far you can trust one. You do not need to know how it was built. You need a working picture accurate enough to predict where it will let you down.
+
+## Why it matters
+
+Most people's picture of an AI assistant is a search engine that talks. That picture is wrong in a way that costs money. A search engine finds a document someone wrote; the assistant composes a reply, word by word, from patterns in text it was trained on. Nothing in that process looks anything up unless the tool has been given a way to, and even then the reply is a composition, not a quotation.
+
+Once you hold the right picture, the tool's behaviour stops being surprising. It is fluent because fluency is what it was trained to produce. It is confident because it has no internal sense of uncertainty to report. It agrees with you because text that agrees with the question tends to be rated well. None of this is dishonesty; it is the shape of the thing.
+
+## What actually happens
+
+### It predicts, it does not know
+
+A [language model](/glossary#language-model) is a system trained on a very large body of text to predict what word plausibly comes next. Ask it what a balance transfer fee is and it produces the kind of sentence that follows that question in the text it learned from. For well-covered subjects that sentence is usually right. For anything specific to you, rare, or recent, it is still producing the plausible sentence, and plausible is not the same as true.
+
+### It fills gaps with invention
+
+When the pattern runs out, the model does not stop. It keeps producing plausible text, which can mean a rule that does not exist, a fee that was never charged, or a citation to a document nobody wrote. This is called a [hallucination](/glossary#hallucination), and it reads exactly like a correct answer, in the same tone and at the same speed. The only reliable way to catch one is to check the claim outside the tool, which is what the fifth step is for.
+
+### Its knowledge stops at a date
+
+Everything the model learned came from text collected up to a [training cutoff](/glossary#training-cutoff). Rules, rates, limits and products that changed after that date are either absent or present in their old form, and the tool will not flag which. Some tools can search the web to update themselves; when they do, the answer still comes back as a composition, and you still need to see the source. Treat any current fact from the tool as dated until you have confirmed it.
+
+### It takes your framing as given
+
+The model answers the question as asked. If the question assumes something false, the answer usually builds on it rather than correcting it. If the question signals what you hope to hear, the answer tends to lean that way. A question that begins "why is it a bad idea to" will get reasons it is a bad idea. This is why the fourth step spends time on how to ask.
+
+### It does not know what it does not know
+
+Because the model has no internal measure of how reliable a given sentence is, its tone carries no information about accuracy. A guess and a well-grounded answer arrive looking identical. Asking the tool how sure it is produces another composed sentence, not a measurement. Confidence has to come from your checking, never from the reply.
+
+## Questions to ask yourself
+
+- Am I treating this reply as something it found, or as something it composed?
+- Could the fact I was just given have changed since the tool's training cutoff?
+- Did my question tell the tool what answer I wanted?
+- If this sentence were invented, would I be able to tell from the way it reads?
+- What would I have to look at, outside the tool, to know this is true?
+
+## Common mistakes
+
+- Taking a confident tone as a sign of a reliable answer; the two are independent.
+- Asking the tool to confirm its own answer, which produces a second composition, not a check.
+- Assuming a cited source exists because it is formatted like one.
+- Believing a rule is current because the tool stated it in the present tense.
+
+## Which knowledge areas apply
+
+- [How language models answer](/domains/how-language-models-answer): the fuller account of prediction, invention, cutoffs and agreement, with the evidence behind it.
+- [Numbers and assumptions](/domains/numbers-and-assumptions): why the same mechanism makes arithmetic and projections unreliable in a particular way.
+- [Scams and impersonation](/domains/scams-and-impersonation): the same fluency, turned against you by someone else.
+
+## For practitioners
+
+<Callout type="info">
+A client who understands that the tool composes rather than retrieves will bring you better questions, so this step is worth ten minutes of your time with them. Give them the three points that matter: it invents when the pattern runs out, its knowledge stops at a date, and its tone tells you nothing about accuracy. Do not try to talk them out of using it; aim to make them a careful user. In their file, note anything they report having been told by a tool that you had to correct, with the date, so a pattern is visible if one forms.
+</Callout>
+
+## Next step
+
+[Choose what you share](/process/choose-what-you-share): what the tool needs from you to answer well, what it does not, and what should never be typed into it.
