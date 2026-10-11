@@ -1,3 +1,4 @@
 export default {
-  'decide-what-to-use-it-for': 'Decide what to use it for'
+  'decide-what-to-use-it-for': 'Decide what to use it for',
+  'understand-how-it-answers': 'Understand how it answers'
 }

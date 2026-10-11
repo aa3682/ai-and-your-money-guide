@@ -118,3 +118,6 @@ Links to glossary terms from any page use the anchor form /glossary#term-id; a p
 Every term that any page links to /glossary. Add a term here when a new page links it. Future prompts reference this list instead of restating it.
 
 - primary source (/glossary#primary-source) — first linked from process/decide-what-to-use-it-for
+- hallucination (/glossary#hallucination) — first linked from process/understand-how-it-answers
+- language model (/glossary#language-model) — first linked from process/understand-how-it-answers
+- training cutoff (/glossary#training-cutoff) — first linked from process/understand-how-it-answers
