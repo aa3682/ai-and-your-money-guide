@@ -125,3 +125,5 @@ Every term that any page links to /glossary. Add a term here when a new page lin
 - personal data (/glossary#personal-data) — first linked from process/choose-what-you-share
 - leading question (/glossary#leading-question) — first linked from process/ask-it-well
 - prompt (/glossary#prompt) — first linked from process/ask-it-well
+- assumption (/glossary#assumption) — first linked from process/check-what-it-tells-you
+- secondary source (/glossary#secondary-source) — first linked from process/check-what-it-tells-you
